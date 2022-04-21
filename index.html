@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Typo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="intro page">
+        <h1 class="logo">Typo</h1>
+        <ul class="nav-links">
+          <li><a href="">HOME</a></li>
+          <li><a id="showInstructions" href="">INSTRUCTIONS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="main page">
+        <div id="first-box" class="square-1 homepage">
+          <h1 id="auto-type"></h1>
+          <button id="lets-start">Let's Start</button>
+        </div>
+
+        <div id="level-selection" class="hidden">
+          <h1>Please Select Your Level?</h1>
+          <ul class="align-buttons">
+            <li><button class="level" id="basic-Level">Basic</button></li>
+            <li>
+              <button class="level" id="intermediate-Level">
+                Intermediate
+              </button>
+            </li>
+            <li><button class="level" id="advanced-Level">Advanced</button></li>
+          </ul>
+        </div>
+
+        <div id="typing-box" class="hidden">
+          <audio id="typewriter" class="hidden">
+            <source src="sounds/typewriter.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <audio id="error" class="hidden">
+            <source src="./sounds/error.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <h1>Start Typing</h1>
+          <p id="typingTextContainer" class="typingTextContainer"></p>
+          <div class="hidden timer" id="timer">
+            <p class="timer-1 hidden">Time:</p>
+            <time></time>
+          </div>
+        </div>
+
+        <div id="result-box" class="hidden">
+          <h1>Your Result:</h1>
+          <p id="accuracy"></p>
+          <p id="speed"></p>
+          <div class="timer">
+            <p>Duration: <time></time></p>
+          </div>
+          <a href="#" id="showLevel">Go back to levels</a>
+        </div>
+      </div>
+
+      <div class="instructions-box">
+        <div>
+          <h1>How to Use Typo</h1>
+          <ol>
+            <li>You need first to click on the Let's Start button.</li>
+            <li>Then, you have to select your level.</li>
+            <li>
+              After selecting your level, you will be able to see the typing
+              text.
+            </li>
+            <li>Once you press any key on the keyboard, the timer will start.</li>
+            <li>
+              Be careful when you type, once you make a mistake, you can't undo
+              it !
+            </li>
+          </ol>
+          <button id="close">close</button>
+        </div>
+      </div>
+    </section>
+    
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

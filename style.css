@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("./images/1.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+
+ul {
+  list-style: none;
+}
+
+.intro {
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 2em;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.nav-links li {
+  margin: 0 2em;
+}
+
+.nav-links li a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 80vh;
+}
+
+section .main {
+  min-height: 34em;
+  width: 76em;
+  background: whitesmoke;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1.5mm solid blue;
+}
+
+#lets-start {
+  margin-top: 4em;
+  background: blue;
+  color: whitesmoke;
+  width: 6em;
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 0.3em;
+  border-color: blue;
+  cursor: pointer;
+}
+#auto-type {
+  position: fixed;
+  font-size: 2.7rem;
+  -webkit-transform: translateX(-7em);
+  -ms-transform: translateX(-7em);
+  transform: translateX(-7em);
+}
+
+#level-selection .align-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 14%;
+}
+
+#level-selection .align-buttons .level {
+  font-size: 19px;
+  width: 7em;
+  margin-left: 1em;
+  background: blue;
+  border-color: blue;
+  color: whitesmoke;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+#level-selection h1 {
+  text-align: center;
+  font-size: 2.7rem;
+}
+
+#typing-box {
+  padding: 35px;
+  line-height: 5em;
+}
+
+#typing-box .typingTextContainer {
+  font-size: 30px;
+  margin-top: 5%;
+  margin-bottom: 30px;
+  margin-left: 1.6em;
+  width: 90%;
+}
+
+.typingTextContainer .underline {
+  border-bottom: 4px solid #55ddff;
+  padding-bottom: 5px;
+}
+
+.typingTextContainer .correct {
+  color: #368a15;
+  background-color: #e7fbd3;
+}
+
+.typingTextContainer .wrong {
+  color: #ff0000;
+  background-color: #ffc0cb;
+}
+
+#typing-box h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+#timer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+
+.timer-1 {
+  margin-right: 0.6em;
+}
+
+#result-box h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+}
+
+#result-box p {
+  margin-top: 1em;
+
+  font-size: 20px;
+  margin-bottom: 1.4em;
+}
+
+#result-box a {
+  background: blue;
+  color: white;
+  text-decoration: none;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.instructions-box {
+  position: absolute;
+  background: gray;
+  height: 55%;
+  width: 50vw;
+  padding: 4em;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: none;
+}
+
+.instructions-box ol {
+  font-size: 3.5vmin;
+}
+
+.instructions-box li {
+  color: whitesmoke;
+}
+
+.instructions-box h1 {
+  font-size: 5vmin;
+  margin-bottom: 3%;
+  color: whitesmoke;
+}
+
+.instructions-box #close {
+  margin-top: 3%;
+  font-size: 20px;
+  padding: 5px;
+  background: blue;
+  color: whitesmoke;
+  border-color: blue;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 850px) {
+  #auto-type {
+    -webkit-transform: translateX(-4em);
+    -ms-transform: translateX(-4em);
+    transform: translateX(-4em);
+    font-size: 2.3em;
+  }
+  section .main {
+    width: 90%;
+    height: 100%;
+  }
+  #level-selection .align-buttons .level {
+    font-size: 1.4rem;
+  }
+  #result-box {
+    margin-left: 2em;
+  }
+  .instructions-box {
+    width: 90%;
+  }
+  #typing-box .typingTextContainer {
+    margin-left: 1em;
+    font-size: 22px;
+  }
+}
